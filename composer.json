@@ -3,7 +3,7 @@
     "type": "spress-plugin",
     "description": "Spress plugin to add `markdown` filter to Twig templates",
     "keywords": ["spress", "plugin"],
-    "license": "GPL-v3",
+    "license": "GPL-3.0",
     "authors": [
         {
             "name": "Florian Engelhardt",
