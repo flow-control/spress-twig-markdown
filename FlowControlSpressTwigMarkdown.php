@@ -20,7 +20,7 @@ class FlowControlSpressTwigMarkdown implements PluginInterface
             'name' => 'flow-control/spress-twig-markdown',
             'description' => 'Spress plugin to add `markdown` filter function to Twig templates',
             'author' => 'Florian Engelhardt',
-            'license' => 'GPL-v3',
+            'license' => 'GPL-3.0',
         ];
     }
 
