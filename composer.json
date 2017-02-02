@@ -2,7 +2,7 @@
     "name": "flow-control/spress-twig-markdown",
     "type": "spress-plugin",
     "description": "Spress plugin to add `markdown` filter to Twig templates",
-    "keywords": ["spress", "plugin"],
+    "keywords": ["spress", "plugin", "markdown", "twig"],
     "license": "GPL-3.0",
     "authors": [
         {
