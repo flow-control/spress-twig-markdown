@@ -7,8 +7,6 @@ use Michelf\MarkdownExtra;
 
 class FlowControlSpressTwigMarkdown implements PluginInterface
 {
-    private $io;
-
     public function initialize(EventSubscriber $subscriber)
     {
         $subscriber->addEventListener('spress.start', 'onStart');
@@ -17,19 +15,17 @@ class FlowControlSpressTwigMarkdown implements PluginInterface
     public function getMetas()
     {
         return [
-            'name' => 'flow-control/spress-twig-markdown',
-            'description' => 'Spress plugin to add `markdown` filter function to Twig templates',
-            'author' => 'Florian Engelhardt',
-            'license' => 'GPL-3.0',
+            'name'          => 'flow-control/spress-twig-markdown',
+            'description'   => 'Spress plugin to add `markdown` filter function to Twig templates',
+            'author'        => 'Florian Engelhardt',
+            'license'       => 'GPL-3.0'
         ];
     }
 
     public function onStart(EnvironmentEvent $event)
     {
-        $renderizer = $event->getRenderizer();
-        $renderizer->addTwigFilter('markdown', function ($string) {
+        $event->getRenderizer()->addTwigFilter('markdown', function ($string) {
             return MarkdownExtra::defaultTransform($string);
         });
     }
-
 }
