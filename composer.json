@@ -9,5 +9,8 @@
             "name": "Florian Engelhardt",
             "email": "flo@dotbox.org"
         }
-    ]
+    ],
+    "require": {
+        "spress/spress-installer": "^2"
+    }
 }
